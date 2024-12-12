@@ -35,7 +35,7 @@ export const activate = (context: vscode.ExtensionContext) => {
 
         const uploadResult = (await uploadResponse.json()) as PostCodeResponse;
         vscode.env.openExternal(
-          vscode.Uri.parse(`${writerUrl}/?id=${uploadResult}`)
+          vscode.Uri.parse(`${writerUrl}/?id=${uploadResult.id}`)
         );
       } catch (err) {
         console.error(err);
