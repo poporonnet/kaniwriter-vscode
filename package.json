@@ -1,0 +1,50 @@
+{
+  "name": "kaniwriter-vscode",
+  "displayName": "kaniwriter",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "kaniwriter-vscode.open-kaniwriter",
+        "title": "Open kaniwriter",
+        "icon": "$(play-circle)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "kaniwriter-vscode.open-kaniwriter",
+          "group": "navigation",
+          "when": "editorLangId == ruby"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "format": "biome format --write",
+    "lint": "biome lint --write",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/mocha": "10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "1.96.0",
+    "@vscode/test-cli": "0.0.10",
+    "@vscode/test-electron": "2.4.1",
+    "typescript": "5.7.2"
+  }
+}
