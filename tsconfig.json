@@ -1,4 +1,6 @@
 {
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/test"],
   "compilerOptions": {
     "module": "Node16",
     "target": "ES2022",
