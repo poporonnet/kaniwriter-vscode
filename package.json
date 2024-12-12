@@ -3,7 +3,7 @@
   "displayName": "kaniwriter",
   "publisher": "tufusa",
   "description": "Open kaniwriter from VSCode",
-  "version": "0.1.0",
+  "version": "0.1.0-beta",
   "engines": {
     "vscode": "^1.96.0"
   },
