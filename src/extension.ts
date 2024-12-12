@@ -1,6 +1,6 @@
 import vscode from "vscode";
 
-const compilerUrl = "https://ceres.epi.it.matsue-ct.ac.jp/compil";
+const compilerUrl = "https://ceres.epi.it.matsue-ct.ac.jp/compile";
 const writerUrl = "https://ceres.epi.it.matsue-ct.ac.jp/writer";
 
 type PostCodeRequest = {
