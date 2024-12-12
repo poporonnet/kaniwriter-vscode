@@ -1,5 +1,1 @@
-# Change Log
-
-## [Unreleased]
-
-- Initial release
+# Changelog
