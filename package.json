@@ -7,9 +7,7 @@
   "engines": {
     "vscode": "^1.96.0"
   },
-  "categories": [
-    "Other"
-  ],
+  "categories": ["Other"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/poporonnet/kaniwriter-vscode.git"
