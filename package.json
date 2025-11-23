@@ -3,7 +3,7 @@
   "displayName": "kaniwriter",
   "publisher": "tufusa",
   "description": "Open kaniwriter from VSCode",
-  "version": "0.1.0-beta",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -36,7 +36,7 @@
     "vscode:prepublish": "pnpm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "pretest": "pnpm run compile && pnpm run lint",
+    "pretest": "pnpm run compile && pnpm run check",
     "check": "biome check --write",
     "test": "vscode-test",
     "package": "vsce package",
