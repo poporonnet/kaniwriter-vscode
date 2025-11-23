@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.0](https://github.com/poporonnet/kaniwriter-vscode/compare/v0.1.0...v0.2.0) (2025-11-23)
+
+
+### Features
+
+* 使用する kanicc と kaniwriter の URL の設定を追加 ([7a6e881](https://github.com/poporonnet/kaniwriter-vscode/commit/7a6e8814e729d79cce68fdda000ac03c5d40a324))
+* 使用する kanicc と kaniwriter の URL を変更できる設定を追加 ([#19](https://github.com/poporonnet/kaniwriter-vscode/issues/19)) ([7a6e881](https://github.com/poporonnet/kaniwriter-vscode/commit/7a6e8814e729d79cce68fdda000ac03c5d40a324))
+
 ## [0.1.0](https://github.com/poporonnet/kaniwriter-vscode/compare/v0.1.0...v0.1.0) (2025-11-23)
 
 
