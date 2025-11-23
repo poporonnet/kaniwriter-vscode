@@ -7,9 +7,7 @@
   "engines": {
     "vscode": "^1.96.0"
   },
-  "categories": [
-    "Other"
-  ],
+  "categories": ["Other"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/poporonnet/kaniwriter-vscode.git"
@@ -39,10 +37,10 @@
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "pretest": "pnpm run compile && pnpm run lint",
-    "format": "biome format --write",
-    "lint": "biome lint --write",
+    "check": "biome check --write",
     "test": "vscode-test",
-    "package": "vsce package"
+    "package": "vsce package",
+    "check:ci": "biome ci && tsc -p ./ --noEmit"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
