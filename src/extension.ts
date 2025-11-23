@@ -1,7 +1,16 @@
 import vscode from "vscode";
 
-const compilerUrl = "https://ceres.epi.it.matsue-ct.ac.jp/compile";
-const writerUrl = "https://ceres.epi.it.matsue-ct.ac.jp/writer";
+const getConfig = () => {
+  const compilerUrlFallback = "https://ceres.epi.it.matsue-ct.ac.jp/compile";
+  const defaultWriterUrl = "https://ceres.epi.it.matsue-ct.ac.jp/writer";
+
+  const config = vscode.workspace.getConfiguration("kaniwriter-vscode");
+
+  const compilerUrl = config.get<string>("compilerUrl", compilerUrlFallback);
+  const writerUrl = config.get<string>("writerUrl", defaultWriterUrl);
+
+  return { compilerUrl, writerUrl };
+};
 
 type PostCodeRequest = {
   code: string;
@@ -17,6 +26,8 @@ export const activate = (context: vscode.ExtensionContext) => {
     "kaniwriter-vscode.open-kaniwriter",
     async () => {
       try {
+        const { compilerUrl, writerUrl } = getConfig();
+
         const editor = vscode.window.activeTextEditor;
         const code = editor?.document.getText();
         if (!code) return;
