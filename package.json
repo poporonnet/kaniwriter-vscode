@@ -1,7 +1,7 @@
 {
   "name": "kaniwriter-vscode",
   "displayName": "kaniwriter",
-  "publisher": "tufusa",
+  "publisher": "poporonnet",
   "description": "Open kaniwriter from VSCode",
   "version": "0.2.0",
   "engines": {
