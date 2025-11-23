@@ -1,3 +1,4 @@
+.github/**
 .vscode/**
 .vscode-test/**
 src/**
@@ -10,3 +11,6 @@ vsc-extension-quickstart.md
 **/.vscode-test.*
 **/biome.json
 pnpm-lock.yaml
+release-please-config.json
+.release-please-manifest.json
+renovate.json
