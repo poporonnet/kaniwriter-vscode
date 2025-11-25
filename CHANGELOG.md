@@ -5,7 +5,7 @@
 
 ### Features
 
-* **docs:** README にインストール方法,・使い方・設定・ライセンスに関する説明を追加 ([#24](https://github.com/poporonnet/kaniwriter-vscode/issues/24)) ([4d6257b](https://github.com/poporonnet/kaniwriter-vscode/commit/4d6257b1b628284f5ed564383a57303110dd0095))
+* **docs:** README にインストール方法・使い方・設定・ライセンスに関する説明を追加 ([#24](https://github.com/poporonnet/kaniwriter-vscode/issues/24)) ([4d6257b](https://github.com/poporonnet/kaniwriter-vscode/commit/4d6257b1b628284f5ed564383a57303110dd0095))
 
 ## [0.2.0](https://github.com/poporonnet/kaniwriter-vscode/compare/v0.1.0...v0.2.0) (2025-11-23)
 
