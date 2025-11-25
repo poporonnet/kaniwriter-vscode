@@ -25,5 +25,3 @@
 ### Miscellaneous Chores
 
 * release as 0.1.0 ([c1998ac](https://github.com/poporonnet/kaniwriter-vscode/commit/c1998ac98c171baa1b381b0b9aef5bc2bf568886))
-
-## Changelog

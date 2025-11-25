@@ -4,6 +4,7 @@
   "publisher": "poporonnet",
   "description": "Open kaniwriter from VSCode",
   "version": "0.2.0",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.106.1"
   },
@@ -11,6 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/poporonnet/kaniwriter-vscode.git"
   },
+  "categories": [
+    "Other"
+  ],
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
