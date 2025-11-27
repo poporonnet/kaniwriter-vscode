@@ -27,8 +27,8 @@ importers:
         specifier: 2.5.2
         version: 2.5.2
       '@vscode/vsce':
-        specifier: 3.7.0
-        version: 3.7.0
+        specifier: 3.7.1
+        version: 3.7.1
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -323,8 +323,8 @@ packages:
   '@vscode/vsce-sign@2.0.5':
     resolution: {integrity: sha512-GfYWrsT/vypTMDMgWDm75iDmAOMe7F71sZECJ+Ws6/xyIfmB3ELVnVN+LwMFAvmXY+e6eWhR2EzNGF/zAhWY3Q==}
 
-  '@vscode/vsce@3.7.0':
-    resolution: {integrity: sha512-LY9r2T4joszRjz4d92ZPl6LTBUPS4IWH9gG/3JUv+1QyBJrveZlcVISuiaq0EOpmcgFh0GgVgKD4rD/21Tu8sA==}
+  '@vscode/vsce@3.7.1':
+    resolution: {integrity: sha512-OTm2XdMt2YkpSn2Nx7z2EJtSuhRHsTPYsSK59hr3v8jRArK+2UEoju4Jumn1CmpgoBLGI6ReHLJ/czYltNUW3g==}
     engines: {node: '>= 20'}
     hasBin: true
 
@@ -1946,7 +1946,7 @@ snapshots:
       '@vscode/vsce-sign-win32-arm64': 2.0.2
       '@vscode/vsce-sign-win32-x64': 2.0.2
 
-  '@vscode/vsce@3.7.0':
+  '@vscode/vsce@3.7.1':
     dependencies:
       '@azure/identity': 4.5.0
       '@secretlint/node': 10.2.2
