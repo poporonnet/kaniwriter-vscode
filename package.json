@@ -39,13 +39,52 @@
       "properties": {
         "kaniwriter-vscode.compilerUrl": {
           "type": "string",
-          "description": "URL for kanicc instance to use.",
+          "order": 0,
+          "enum": [
+            "https://ceres.epi.it.matsue-ct.ac.jp/compile",
+            "custom"
+          ],
+          "enumItemLabels": [
+            "ceres.epi.it.matsue-ct.ac.jp/compile",
+            "Custom"
+          ],
+          "enumDescriptions": [
+            "Use ceres.epi.it.matsue-ct.ac.jp instance",
+            "Input custom URL"
+          ],
+          "description": "kanicc instance to use.",
           "default": "https://ceres.epi.it.matsue-ct.ac.jp/compile"
+        },
+        "kaniwriter-vscode.customCompilerUrl": {
+          "type": "string",
+          "order": 1,
+          "description": "Custom URL for kanicc instance to use."
         },
         "kaniwriter-vscode.writerUrl": {
           "type": "string",
-          "description": "URL for kaniwriter instance to use.",
-          "default": "https://ceres.epi.it.matsue-ct.ac.jp/writer"
+          "order": 0,
+          "enum": [
+            "https://kaniwriter.poporon.org",
+            "https://ceres.epi.it.matsue-ct.ac.jp/writer",
+            "custom"
+          ],
+          "enumItemLabels": [
+            "kaniwriter.poporon.org",
+            "ceres.epi.it.matsue-ct.ac.jp/writer",
+            "Custom"
+          ],
+          "enumDescriptions": [
+            "Use poporon.org instance",
+            "Use ceres.epi.it.matsue-ct.ac.jp instance",
+            "Input custom URL"
+          ],
+          "description": "kaniwriter instance to use.",
+          "default": "https://kaniwriter.poporon.org"
+        },
+        "kaniwriter-vscode.customWriterUrl": {
+          "type": "string",
+          "order": 1,
+          "description": "Custom URL for kaniwriter instance to use."
         }
       }
     }
