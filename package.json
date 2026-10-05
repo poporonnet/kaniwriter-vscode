@@ -58,6 +58,8 @@
         "kaniwriter-vscode.customCompilerUrl": {
           "type": "string",
           "order": 1,
+          "pattern": "^$|^https?://.+$",
+          "patternErrorMessage": "Enter a valid URL or leave empty.",
           "description": "Custom URL for kanicc instance to use."
         },
         "kaniwriter-vscode.writerInstance": {
@@ -84,6 +86,8 @@
         "kaniwriter-vscode.customWriterUrl": {
           "type": "string",
           "order": 1,
+          "pattern": "^$|^https?://.+$",
+          "patternErrorMessage": "Enter a valid URL or leave empty.",
           "description": "Custom URL for kaniwriter instance to use."
         }
       }
