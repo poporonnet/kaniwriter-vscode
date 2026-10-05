@@ -8,11 +8,11 @@ const getConfig = () => {
 
   const compilerInstance = config.get<(string & {}) | "custom">(
     "compilerInstance",
-    "custom"
+    compilerUrlFallback
   );
   const writerInstance = config.get<(string & {}) | "custom">(
     "writerInstance",
-    "custom"
+    writerUrlFallback
   );
 
   const customCompilerUrl =
