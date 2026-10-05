@@ -16,8 +16,10 @@ Open any `.rb` file and click `▶` icon in the menu bar.
 
 ## Configuration
 
-- `kaniwriter-vscode.compilerUrl`: Change kanicc ( online compiler ) instance URL to use.
-- `kaniwriter-vscode.writerUrl`: Change kaniwriter ( web writer ) instance URL to use.
+- `kaniwriter-vscode.compilerInstance`: Select the instance of kanicc ( online compiler ) to use.
+- `kaniwriter-vscode.writerInstance`: Select the instance of kaniwriter ( web writer ) instance to use.
+- `kaniwriter-vscode.customCompilerUrl`: Define custom URL for kanicc. Effective only when `compilerInstance` is set to `Custom`.
+- `kaniwriter-vscode.customWriterUrl`: Define custom URL for kaniwriter. Effective only when `writerInstance` is set to `Custom`.
 
 ## License
 
