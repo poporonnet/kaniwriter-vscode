@@ -2,14 +2,31 @@ import vscode from "vscode";
 
 const getConfig = () => {
   const compilerUrlFallback = "https://ceres.epi.it.matsue-ct.ac.jp/compile";
-  const defaultWriterUrl = "https://ceres.epi.it.matsue-ct.ac.jp/writer";
+  const writerUrlFallback = "https://kaniwriter.poporon.org";
 
   const config = vscode.workspace.getConfiguration("kaniwriter-vscode");
 
-  const compilerUrl = config.get<string>("compilerUrl", compilerUrlFallback);
-  const writerUrl = config.get<string>("writerUrl", defaultWriterUrl);
+  const compilerInstance = config.get<(string & {}) | "custom">(
+    "compilerInstance",
+    compilerUrlFallback
+  );
+  const writerInstance = config.get<(string & {}) | "custom">(
+    "writerInstance",
+    writerUrlFallback
+  );
 
-  return { compilerUrl, writerUrl };
+  const customCompilerUrl =
+    config.get<string>("customCompilerUrl", compilerUrlFallback) ||
+    compilerUrlFallback; // 空文字列もフォールバック
+  const customWriterUrl =
+    config.get<string>("customWriterUrl", writerUrlFallback) ||
+    writerUrlFallback; // 空文字列もフォールバック
+
+  return {
+    compilerUrl:
+      compilerInstance === "custom" ? customCompilerUrl : compilerInstance,
+    writerUrl: writerInstance === "custom" ? customWriterUrl : writerInstance,
+  };
 };
 
 type PostCodeRequest = {
