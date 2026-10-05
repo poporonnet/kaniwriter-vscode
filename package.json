@@ -37,7 +37,7 @@
     "configuration": {
       "title": "kaniwriter",
       "properties": {
-        "kaniwriter-vscode.compilerUrl": {
+        "kaniwriter-vscode.compilerInstance": {
           "type": "string",
           "order": 0,
           "enum": [
@@ -60,7 +60,7 @@
           "order": 1,
           "description": "Custom URL for kanicc instance to use."
         },
-        "kaniwriter-vscode.writerUrl": {
+        "kaniwriter-vscode.writerInstance": {
           "type": "string",
           "order": 0,
           "enum": [

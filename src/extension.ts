@@ -6,11 +6,14 @@ const getConfig = () => {
 
   const config = vscode.workspace.getConfiguration("kaniwriter-vscode");
 
-  const compilerUrl = config.get<(string & {}) | "custom">(
-    "compilerUrl",
+  const compilerInstance = config.get<(string & {}) | "custom">(
+    "compilerInstance",
     "custom"
   );
-  const writerUrl = config.get<(string & {}) | "custom">("writerUrl", "custom");
+  const writerInstance = config.get<(string & {}) | "custom">(
+    "writerInstance",
+    "custom"
+  );
 
   const customCompilerUrl =
     config.get<string>("customCompilerUrl", compilerUrlFallback) ||
@@ -20,8 +23,9 @@ const getConfig = () => {
     writerUrlFallback; // 空文字列もフォールバック
 
   return {
-    compilerUrl: compilerUrl === "custom" ? customCompilerUrl : compilerUrl,
-    writerUrl: writerUrl === "custom" ? customWriterUrl : writerUrl,
+    compilerUrl:
+      compilerInstance === "custom" ? customCompilerUrl : compilerInstance,
+    writerUrl: writerInstance === "custom" ? customWriterUrl : writerInstance,
   };
 };
 
